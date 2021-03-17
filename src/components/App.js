@@ -5,6 +5,7 @@ import Blog from "./Blog";
 import Footer from "./Footer";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
+import Mountains from "./Mountains";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Contact />
         </Route>
         <Footer />
+        <Mountains />
       </Router>
     </div>
   );

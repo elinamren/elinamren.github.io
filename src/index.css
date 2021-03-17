@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
 
 :root {
   --link-hover: #127891;
@@ -21,7 +22,8 @@
 }
 
 body {
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
+  font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -31,27 +33,50 @@ nav {
 
 .app {
   margin: 40px 100px;
+  position: relative;
 }
 
 h1 {
   font-size: 3rem;
+  font-weight: 400;
 }
 
 h2 {
   font-size: 2.25rem;
+  font-weight: 300;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 300;
+
   padding-bottom: 10px;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+h5 {
+  font-weight: 300;
 }
 
 p {
   font-size: 1.125rem;
+  font-weight: 300;
 }
 
 .title {
   text-align: center;
+}
+
+.background-img {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  width: 100%;
 }
 
 /* NAV */
@@ -86,9 +111,24 @@ ul {
   list-style-type: none;
 }
 
-li {
+nav ul li {
   display: inline;
   margin-right: 50px;
+  text-transform: uppercase;
+}
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 20px;
+  z-index: 11;
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+}
+
+.icons:hover {
+  fill: white;
 }
 
 /* MAIN PAGE */
@@ -109,27 +149,17 @@ li {
   max-width: 254px;
 }
 
-/* FOOTER */
-footer {
-  position: fixed;
-  bottom: 20px;
-  z-index: 11;
-  width: 100%;
-  text-align: center;
-}
-
-.fab:hover {
-  color: var(--background-color);
-}
-
 /* PORTFOLIO */
 
 .projects,
 .posts {
-  background-color: var(--project-color);
-  border-radius: 20px;
+  background-color: #d8eaf0;
+  border-radius: 2px;
   margin-bottom: 40px;
   padding: 20px;
+}
+
+.projects {
   display: flex;
   flex-direction: row;
 }
@@ -147,13 +177,43 @@ footer {
   padding-left: 40px;
 }
 
+hr {
+  border: none;
+  height: 0.5px;
+  background-color: #2525257e;
+  margin-top: 2px;
+  margin-bottom: 15px;
+}
+
+.project-content p {
+  padding-bottom: 15px;
+}
+
+.project-content a {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  transition: 0.2s ease;
+  cursor: pointer;
+  padding: 4px 20px;
+  margin: 5px 5px 5px 0;
+}
+
+.project-content h4 {
+  padding-bottom: 5px;
+}
+
+.project-content ul {
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
 /* BLOG */
 
 .post-container,
 .project-container {
   margin: 40px auto 270px;
   max-width: 800px;
-  color: var(--background-color);
 }
 
 /* CONTACT */
@@ -166,8 +226,8 @@ footer {
 input,
 textarea {
   width: 500px;
-  margin: 10px 0;
-  font-family: "Playfair Display", serif;
+  margin: 5px 0 15px 0;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   padding: 4px;
   background-color: var(--background-color);
@@ -175,9 +235,8 @@ textarea {
   color: var(--text-color);
 }
 
-input::placeholder,
-textarea::placeholder {
-  color: var(--text-color);
+label {
+  font-size: 0.75rem;
 }
 
 input:focus,
@@ -189,4 +248,16 @@ textarea:focus {
   width: 30%;
   color: var(--background-color);
   background-color: var(--text-color);
+  text-transform: uppercase;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.submit-btn:hover,
+.project-content a:hover {
+  background-color: black;
+}
+
+.submit-btn:focus {
+  outline: none;
 }

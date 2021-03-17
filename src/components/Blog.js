@@ -1,3 +1,5 @@
+import posts from "./posts";
+
 const Blog = () => {
   return (
     <div className="blog-container">
@@ -5,34 +7,15 @@ const Blog = () => {
         <h1>Blog</h1>
       </div>
 
-      <section class="post-container">
-        <div class="posts">
-          <p>
-            Weekly Learnigs #3 <br />
-            This week I’ve spent time with my CMS project. I have learned how to
-            use Postman and. Lala f nrjegbf gfhhfreihw fnhrhehigw fjhi.
-            Ldhuiterh fbsgyrehkf fhfhuiw. Jfeggfebb hfeh fehwijod jdkowkkd...
-            read more
-          </p>
-        </div>
-        <div class="posts">
-          <p>
-            Weekly Learnigs #2 <br />
-            This week I’ve spent time with my CMS project. I have learned how to
-            use Postman and. Lala f nrjegbf gfhhfreihw fnhrhehigw fjhi.
-            Ldhuiterh fbsgyrehkf fhfhuiw. Jfeggfebb hfeh fehwijod jdkowkkd...
-            read more
-          </p>
-        </div>
-        <div class="posts">
-          <p>
-            Weekly Learnigs #1 <br />
-            This week I’ve spent time with my CMS project. I have learned how to
-            use Postman and. Lala f nrjegbf gfhhfreihw fnhrhehigw fjhi.
-            Ldhuiterh fbsgyrehkf fhfhuiw. Jfeggfebb hfeh fehwijod jdkowkkd...
-            read more
-          </p>
-        </div>
+      <section className="post-container">
+        {posts.map((post) => {
+          return (
+            <div className="posts">
+              <h3>{post.title}</h3>
+              <p>{post.text}</p>
+            </div>
+          );
+        })}
       </section>
     </div>
   );
