@@ -1,6 +1,9 @@
 import projects from "./projects";
+import { useMediaQuery } from "react-responsive";
 
 const Portfolio = () => {
+  const isMobile = useMediaQuery({ query: `(max-width: 660px)` });
+
   return (
     <div className="portfolio-container">
       <div className="title">
@@ -15,6 +18,19 @@ const Portfolio = () => {
                 <h5>Developed by: {project.by}</h5>
                 <hr />
                 <p>{project.text}</p>
+
+                {isMobile && (
+                  <div className="project-img">
+                    {project.image === "" ? null : (
+                      <img
+                        className="project-images"
+                        src={project.image}
+                        alt={project.title}
+                      />
+                    )}
+                  </div>
+                )}
+
                 <h4>Tools used</h4>
                 <ul>
                   {project.tools.map((tool) => (
@@ -28,22 +44,25 @@ const Portfolio = () => {
                   <a href={project.website}>Visit site</a>
                 )}
               </div>
-              <div className="project-img">
-                {project.image === "" ? null : (
-                  <img
-                    className="project-images"
-                    src={project.image}
-                    alt={project.title}
-                  />
-                )}
-                {project.image2 === "" ? null : (
-                  <img
-                    className="project-images"
-                    src={project.image2}
-                    alt={project.title}
-                  />
-                )}
-              </div>
+
+              {!isMobile && (
+                <div className="project-img">
+                  {project.image === "" ? null : (
+                    <img
+                      className="project-images"
+                      src={project.image}
+                      alt={project.title}
+                    />
+                  )}
+                  {project.image2 === "" ? null : (
+                    <img
+                      className="project-images"
+                      src={project.image2}
+                      alt={project.title}
+                    />
+                  )}
+                </div>
+              )}
             </div>
           );
         })}

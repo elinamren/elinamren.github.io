@@ -12,6 +12,8 @@ const Blog = () => {
           return (
             <div className="posts">
               <h3>{post.title}</h3>
+              <h5>{post.date}</h5>
+              <hr />
               <p>{post.text}</p>
             </div>
           );

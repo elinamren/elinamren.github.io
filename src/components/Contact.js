@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="contact-text">
         <p>
           Dont be a stranger, want to talk about code or just chit chat over an
-          online coffee? Hit me up, say hello!
+          online coffee about bikes or skiing? Hit me up, say hello!
         </p>
       </div>
       <div className="contact-form">
