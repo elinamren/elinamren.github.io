@@ -15,9 +15,9 @@ const projects = [
     id: 7,
     title: "Trime",
     text:
-      "Trime is a startup that will release a training app. They wanted to impromve the UX and UI in their app. We worked closely with the UX designers at Hyper Island and developed a new sign up process.",
-    image: "",
-    image2: "",
+      "Trime is a startup that will release a training app. They wanted to impromve the UX and UI in their app. We worked closely with the UX designers Simon and Maria at Hyper Island and developed a new sign up process.",
+    image: "images/trime.png",
+    image2: "images/trime2.png",
     tools: ["Reactjs", "JavaScript", "HTML/CSS"],
     by: "Elin Amrén, Cecilia Hallerby",
     github: "https://github.com/elinamren/trime",
