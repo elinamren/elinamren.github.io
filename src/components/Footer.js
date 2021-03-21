@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="social-media">
-        <a href="/">
+        <a href="https://www.linkedin.com/in/elin-amr%C3%A9n-a48612143/">
           <svg
             width="30"
             height="30"
@@ -22,7 +22,7 @@ const Footer = () => {
             ></path>
           </svg>
         </a>
-        <a href="/">
+        <a href="https://github.com/elinamren">
           <svg
             width="30"
             height="30"
