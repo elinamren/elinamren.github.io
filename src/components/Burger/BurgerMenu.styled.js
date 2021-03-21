@@ -5,7 +5,6 @@ export const StyledMenu = styled.nav`
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    ${"" /* background-color: #252525d3; */}
     background-color: #d8eaf0e3;
     text-transform: uppercase;
     height: 100vh;
@@ -18,6 +17,7 @@ export const StyledMenu = styled.nav`
     left: 0;
     transition: transform 0.3s ease-in-out;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
+    z-index: 5;
   }
   .burger-link {
       padding: 1rem 0;

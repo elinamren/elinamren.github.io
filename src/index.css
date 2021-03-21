@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
 
 :root {
@@ -9,13 +8,6 @@
   --project-color: #d8eaf0;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: #fff;
-    --background-color: #252525;
-  }
-} */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,7 +15,6 @@
 }
 
 body {
-  /* font-family: "Playfair Display", serif; */
   font-family: "Montserrat", sans-serif;
 }
 
@@ -87,8 +78,7 @@ a {
   position: relative;
 }
 li a:hover:after {
-  width: 100%;
-  left: 0;
+  opacity: 100%;
 }
 li a:after {
   background: none repeat scroll 0 0 transparent;
@@ -99,8 +89,9 @@ li a:after {
   right: 0;
   position: absolute;
   background: var(--link-hover);
-  transition: width 1s ease 0s, left 0.5s ease 0s;
-  width: 0;
+  transition: 0.3s ease;
+  width: 100%;
+  opacity: 0;
 }
 
 ul {
@@ -123,8 +114,12 @@ footer {
   z-index: -1;
 }
 
+.icons {
+  transition: 0.2s ease;
+}
+
 .icons:hover {
-  fill: var(--background-color);
+  fill: var(--button-hover);
 }
 
 /* MAIN PAGE */

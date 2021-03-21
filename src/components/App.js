@@ -6,8 +6,8 @@ import Footer from "./Footer";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import Mountains from "./Mountains";
-import Burger from "./Burger";
-import BurgerMenu from "./BurgerMenu";
+import Burger from "./Burger/Burger";
+import BurgerMenu from "./Burger/BurgerMenu";
 import { useMediaQuery } from "react-responsive";
 import React, { useState } from "react";
 
