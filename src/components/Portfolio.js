@@ -12,7 +12,7 @@ const Portfolio = () => {
       <div className="project-container">
         {projects.map((project) => {
           return (
-            <div className="projects">
+            <div className="projects" key={project.id}>
               <div className="project-content">
                 <h3>{project.title}</h3>
                 <h5>Developed by: {project.by}</h5>
@@ -34,7 +34,7 @@ const Portfolio = () => {
                 <h4>Tools used</h4>
                 <ul>
                   {project.tools.map((tool) => (
-                    <li>{tool}</li>
+                    <li key={tool}>{tool}</li>
                   ))}
                 </ul>
                 {project.github === "/" ? null : (

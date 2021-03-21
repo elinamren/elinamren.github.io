@@ -4,8 +4,9 @@
 :root {
   --link-hover: #127891;
   --text-color: #252525;
+  --button-hover: #000;
   --background-color: #fff;
-  --project-color: #8fc2d4;
+  --project-color: #d8eaf0;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -24,16 +25,6 @@
 body {
   /* font-family: "Playfair Display", serif; */
   font-family: "Montserrat", sans-serif;
-}
-
-nav {
-  margin: 40px 100px 100px 90px;
-  position: relative;
-}
-
-.app {
-  margin: 40px 100px;
-  position: relative;
 }
 
 h1 {
@@ -80,6 +71,11 @@ p {
 }
 
 /* NAV */
+
+nav {
+  margin: 40px 100px 100px 90px;
+  position: relative;
+}
 
 a {
   font-size: 1.5rem;
@@ -128,7 +124,7 @@ footer {
 }
 
 .icons:hover {
-  fill: white;
+  fill: var(--background-color);
 }
 
 /* MAIN PAGE */
@@ -153,7 +149,7 @@ footer {
 
 .projects,
 .posts {
-  background-color: #d8eaf0;
+  background-color: var(--project-color);
   border-radius: 2px;
   margin-bottom: 40px;
   padding: 20px;
@@ -180,7 +176,7 @@ footer {
 hr {
   border: none;
   height: 0.5px;
-  background-color: #2525257e;
+  background-color: #2525257b;
   margin-top: 2px;
   margin-bottom: 15px;
 }
@@ -255,7 +251,7 @@ textarea:focus {
 
 .submit-btn:hover,
 .project-content a:hover {
-  background-color: black;
+  background-color: var(--button-hover);
 }
 
 .submit-btn:focus {
@@ -263,7 +259,14 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 960px) {
+  .blog-container,
+  .portfolio-container,
+  .contact-container {
+    padding-top: 100px;
+  }
+
   .hello {
+    padding-top: 50px;
     flex-direction: column;
     text-align: center;
   }

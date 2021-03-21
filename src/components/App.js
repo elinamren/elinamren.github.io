@@ -6,12 +6,25 @@ import Footer from "./Footer";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import Mountains from "./Mountains";
+import Burger from "./Burger";
+import BurgerMenu from "./BurgerMenu";
+import { useMediaQuery } from "react-responsive";
+import React, { useState } from "react";
 
 function App() {
+  const isMobile = useMediaQuery({ query: `(max-width: 960px)` });
+  const [open, setOpen] = useState(false);
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        {isMobile ? (
+          <div>
+            <Burger open={open} setOpen={setOpen} />
+            <BurgerMenu open={open} setOpen={setOpen} />
+          </div>
+        ) : (
+          <Navbar />
+        )}
         <Route exact path="/">
           <Home />
         </Route>
