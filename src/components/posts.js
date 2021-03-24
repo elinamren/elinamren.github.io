@@ -1,5 +1,12 @@
 const posts = [
   {
+    id: 4,
+    title: "Weekly Learnings #4",
+    date: "MARCH 24, 2021",
+    text:
+      'This week we started our new module "The first app" witch will include alot of react. We solved the deployment of our first react app with hash router, Ive started the exersices on Exercism whitch is challenging!',
+  },
+  {
     id: 3,
     title: "Weekly Learnings #3",
     date: "MARCH 18, 2021",
@@ -18,7 +25,7 @@ const posts = [
     title: "Weekly Learnings #1",
     date: "MARCH 5, 2021",
     text:
-      "This week I’ve spent time with my CMS project. I have learned how to use Postman and. Lala f nrjegbf gfhhfreihw fnhrhehigw fjhi. Ldhuiterh fbsgyrehkf fhfhuiw. Jfeggfebb hfeh fehwijod jdkowkkd... read more",
+      "This week I’ve spent time with my CMS project. I have learned how to use Postman and have a better insight in PHP and how to build a REST Api. The most challenging part was the connection from the backend to the frontend.",
   },
 ];
 
