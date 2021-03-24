@@ -43,7 +43,7 @@ const projects = [
     image: "images/femart.png",
     image2: "images/femart2.png",
     tools: ["WordPress", "Elementor Pro", "CSS"],
-    by: "Elin Amrén, Lisa Lee Källman, Pablo Galliesteo, August Thorell",
+    by: "Elin Amrén, Lisa Lee Källman, Pablo Galisteo, August Thorell",
     github: "/",
     website: "https://femart.se/",
   },
