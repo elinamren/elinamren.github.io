@@ -72,13 +72,13 @@ a {
   font-size: 1.5rem;
   text-decoration: none;
   color: var(--text-color);
-
   display: inline-block;
   padding: 0 10px 10px;
   position: relative;
 }
 li a:hover:after {
-  opacity: 100%;
+  width: 100%;
+  left: 0;
 }
 li a:after {
   background: none repeat scroll 0 0 transparent;
@@ -89,9 +89,8 @@ li a:after {
   right: 0;
   position: absolute;
   background: var(--link-hover);
-  transition: 0.3s ease;
-  width: 100%;
-  opacity: 0;
+  transition: width 1s ease 0s, left 0.5s ease 0s;
+  width: 0;
 }
 
 ul {

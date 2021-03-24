@@ -19,13 +19,7 @@ const BurgerMenu = (props) => {
       >
         Portfolio
       </Link>
-      <Link
-        className="burger-link"
-        to="/blog"
-        onClick={() => props.setOpen(!props.open)}
-      >
-        Blog
-      </Link>
+
       <Link
         className="burger-link"
         to="/contact"
