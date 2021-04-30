@@ -1,5 +1,12 @@
 const posts = [
   {
+    id: 5,
+    title: "Weekly Learnings #6",
+    date: "APRIL 6, 2021",
+    text:
+      "Trying to understand changing complex state. That will be this weeks topic. Also will start our firts project for the module this week.",
+  },
+  {
     id: 4,
     title: "Weekly Learnings #4",
     date: "MARCH 24, 2021",
