@@ -17,8 +17,6 @@ const Portfolio = () => {
                 <h3>{project.title}</h3>
                 <h5>Developed by: {project.by}</h5>
                 <hr />
-                <p>{project.text}</p>
-
                 {isMobile && (
                   <div className="project-img">
                     {project.image === "" ? null : (
@@ -30,6 +28,7 @@ const Portfolio = () => {
                     )}
                   </div>
                 )}
+                <p>{project.text}</p>
 
                 <h4>Tools used</h4>
                 <ul>
