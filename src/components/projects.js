@@ -3,7 +3,7 @@ const projects = [
     id: 9,
     title: "Focus",
     text:
-      "This is a Hyper Island school project. A pomodora focus timer to get the most out of your day. That also includes a nice playlist and a todo list that is saved to local storage to not forget any important tasks. You will also find the current moonphase in the footer, maybe an explanation to your lack of fokus ;)",
+      "This is a Hyper Island school project. A pomodora focus timer to get the most out of your day. That also includes a nice playlist and a todo list that is saved to local storage to not forget any important tasks. You will also find the current moonphase in the footer, maybe an explanation to your lack of focus ;)",
     image: "images/focus.png",
     image2: "images/focus2.png",
     tools: ["Reactjs", "Momentjs", "Weather API", "Local storage", "HTML/CSS"],

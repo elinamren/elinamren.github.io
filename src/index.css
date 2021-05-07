@@ -284,6 +284,11 @@ textarea:focus {
     font-size: 1.75rem;
     font-weight: 300;
   }
+
+  .hello {
+    margin: 10% auto;
+  }
+
   .post-container,
   .project-container {
     max-width: 95%;
