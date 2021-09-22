@@ -1,5 +1,16 @@
 const projects = [
   {
+    id: 11,
+    title: "Kids Routine",
+    text: "For my personal project at Hyper Island I wanted to make a new version of my kids routine game that I made a year ago. For kids in a fun way finish their tasks during the day. I added settings so you can choose the tasks that fit your needs, add a name for a more personal experience. You get a star for every finished task that you can see in a good visual way for small kids. Depending on the time you see the morning or night tasks. All is saved in local storage",
+    image: "images/kids-routine.png",
+    image2: "images/kids-routine2.png",
+    tools: ["React.js", "Local storage"],
+    by: "Elin Amrén",
+    github: "https://github.com/elinamren/kids-routine",
+    website: "https://elinamren.github.io/kids-routine/",
+  },
+  {
     id: 10,
     title: "Pleasantville",
     text: "Level 3 is part of 'Escape from Pleasantville', a group coding project in which myself and five other teammates each created a level that makes up an entire game. This was created as part of Hyper Island's exploring code module, wherein we were encouraged to experiment with new technologies and think about aspects of the web experience that weren't necessarily related to code. Escape from Pleasantville is a story of the missing Alex, told through a series of postcards. You're on a mission to find out just what happened to them, and the trail has led you to a bizarre little town called Pleasantville. Now, in the middle of the game, you can't wait to get answers what happened and where Alex is... This project was built with A-frame, a web framework for building 3D/AR/VR experiences",
