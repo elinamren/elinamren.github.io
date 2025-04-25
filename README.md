@@ -8,4 +8,6 @@ Reactjs
 styled components  
 react responsive  
 react router    
-Figma  
+Figma
+
+
